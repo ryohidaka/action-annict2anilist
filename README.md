@@ -21,6 +21,7 @@ jobs:
         with:
           anilist-access-token: "xxx"
           anilist-refresh-token: "xxx"
+          annict-access-token: "xxx"
 ```
 
 ## Inputs
@@ -29,6 +30,7 @@ jobs:
 | ----------------------- | ------------------------------ | -------- | ------- |
 | `anilist-access-token`  | Anilist のアクセストークン     | ✅       |         |
 | `anilist-refresh-token` | Anilist のリフレッシュトークン | ✅       |         |
+| `annict-access-token`   | Annict のリフレッシュトークン  | ✅       |         |
 
 ## Outputs
 

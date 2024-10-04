@@ -17,6 +17,10 @@ inputs:
     description: "Anilistのリフレッシュトークン"
     required: true
 
+  annict-access-token:
+    description: "Annictのリフレッシュトークン"
+    required: true
+
 runs:
   using: "composite"
   steps:
@@ -36,4 +40,10 @@ runs:
         $GITHUB_ACTION_PATH/scripts/anilist_token.sh \
           ${{ inputs.anilist-access-token }} \
           ${{ inputs.anilist-refresh-token }}
+      shell: bash
+
+    - name: Generate token-annict.json
+      run: |
+        $GITHUB_ACTION_PATH/scripts/annict_token.sh \
+          ${{ inputs.annict-access-token }}
       shell: bash

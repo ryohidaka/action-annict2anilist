@@ -15,3 +15,4 @@ jobs:
         with:
           anilist-access-token: ${{ secrets.ANILIST_ACCESS_TOKEN }}
           anilist-refresh-token: ${{ secrets.ANILIST_REFRESH_TOKEN }}
+          annict-access-token: ${{ secrets.ANNICT_ACCESS_TOKEN }}
