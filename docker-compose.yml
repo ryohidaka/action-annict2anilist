@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: annict2anilist
+    image: ghcr.io/slashnephy/annict2anilist:master
+    environment:
+      ANNICT_CLIENT_ID: ${ANNICT_CLIENT_ID}
+      ANNICT_CLIENT_SECRET: ${ANNICT_CLIENT_SECRET}
+      ANILIST_CLIENT_ID: ${ANILIST_CLIENT_ID}
+      ANILIST_CLIENT_SECRET: ${ANILIST_CLIENT_SECRET}
+      DRY_RUN: ${DRY_RUN}
+      TOKEN_DIRECTORY: /app/token
+    volumes:
+      - ./token:/app/token

@@ -9,6 +9,22 @@ branding:
   icon: send
 
 inputs:
+  annict-client-id:
+    description: "AnnictのクライアントID"
+    required: true
+
+  annict-client-secret:
+    description: "Annictのクライアントシークレット"
+    required: true
+
+  anilist-client-id:
+    description: "AnilistのクライアントID"
+    required: true
+
+  anilist-client-secret:
+    description: "Anilistのクライアントシークレット"
+    required: true
+
   anilist-access-token:
     description: "Anilistのアクセストークン"
     required: true
@@ -20,6 +36,11 @@ inputs:
   annict-access-token:
     description: "Annictのリフレッシュトークン"
     required: true
+
+  dry-run:
+    description: "デバッグフラグ (デフォルト: `0`)"
+    required: false
+    default: 0
 
 runs:
   using: "composite"
@@ -47,3 +68,15 @@ runs:
         $GITHUB_ACTION_PATH/scripts/annict_token.sh \
           ${{ inputs.annict-access-token }}
       shell: bash
+
+    - name: Run annict2anilist container
+      run: |
+        chmod -R 777 $GITHUB_ACTION_PATH/token
+        docker compose up
+      shell: bash
+      env:
+        ANNICT_CLIENT_ID: ${{ inputs.annict-client-id }}
+        ANNICT_CLIENT_SECRET: ${{ inputs.annict-client-secret }}
+        ANILIST_CLIENT_ID: ${{ inputs.anilist-client-id }}
+        ANILIST_CLIENT_SECRET: ${{ inputs.anilist-client-secret }}
+        DRY_RUN: ${{ inputs.dry-run }}

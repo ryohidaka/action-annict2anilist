@@ -19,18 +19,28 @@ jobs:
     steps:
       - uses: ryohidaka/action-annict2anilist@v1
         with:
+          annict-client-id: "xxx"
+          annict-client-secret: "xxx"
+          anilist-client-id: "xxx"
+          anilist-client-secret: "xxx"
           anilist-access-token: "xxx"
           anilist-refresh-token: "xxx"
           annict-access-token: "xxx"
+          dry-run: 0
 ```
 
 ## Inputs
 
-| Input                   | Description                    | Required | Default |
-| ----------------------- | ------------------------------ | -------- | ------- |
-| `anilist-access-token`  | Anilist のアクセストークン     | ✅       |         |
-| `anilist-refresh-token` | Anilist のリフレッシュトークン | ✅       |         |
-| `annict-access-token`   | Annict のリフレッシュトークン  | ✅       |         |
+| Input                   | Description                          | Required | Default |
+| ----------------------- | ------------------------------------ | -------- | ------- |
+| `annict-client-id`      | Annict のクライアント ID             | ✅       |         |
+| `annict-client-secret`  | Annict のクライアントシークレット    | ✅       |         |
+| `anilist-client-id`     | Anilist のクライアント ID            | ✅       |         |
+| `anilist-client-secret` | Anilist のクライアントシークレット   | ✅       |         |
+| `anilist-access-token`  | Anilist のアクセストークン           | ✅       |         |
+| `anilist-refresh-token` | Anilist のリフレッシュトークン       | ✅       |         |
+| `annict-access-token`   | Annict のリフレッシュトークン        | ✅       |         |
+| `dry-run`               | デバッグフラグ(有効: `1`, 無効: `0`) |          | `0`     |
 
 ## Outputs
 
