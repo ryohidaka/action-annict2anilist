@@ -19,3 +19,7 @@ runs:
     - name: Set GitHub Path
       run: echo "GITHUB_ACTION_PATH=${GITHUB_ACTION_PATH}" >> $GITHUB_ENV
       shell: bash
+
+    - name: Generate token directory
+      run: mkdir -p token
+      shell: bash
