@@ -9,6 +9,13 @@ branding:
   icon: send
 
 inputs:
+  anilist-access-token:
+    description: "Anilistのアクセストークン"
+    required: true
+
+  anilist-refresh-token:
+    description: "Anilistのリフレッシュトークン"
+    required: true
 
 runs:
   using: "composite"
@@ -22,4 +29,11 @@ runs:
 
     - name: Generate token directory
       run: mkdir -p token
+      shell: bash
+
+    - name: Generate token-anilist.json
+      run: |
+        $GITHUB_ACTION_PATH/scripts/anilist_token.sh \
+          ${{ inputs.anilist-access-token }} \
+          ${{ inputs.anilist-refresh-token }}
       shell: bash

@@ -12,3 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: "./"
+        with:
+          anilist-access-token: ${{ secrets.ANILIST_ACCESS_TOKEN }}
+          anilist-refresh-token: ${{ secrets.ANILIST_REFRESH_TOKEN }}

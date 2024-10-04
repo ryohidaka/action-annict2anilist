@@ -18,12 +18,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: ryohidaka/action-annict2anilist@v1
+        with:
+          anilist-access-token: "xxx"
+          anilist-refresh-token: "xxx"
 ```
 
 ## Inputs
 
-| Input | Description | Required | Default |
-| ----- | ----------- | -------- | ------- |
+| Input                   | Description                    | Required | Default |
+| ----------------------- | ------------------------------ | -------- | ------- |
+| `anilist-access-token`  | Anilist のアクセストークン     | ✅       |         |
+| `anilist-refresh-token` | Anilist のリフレッシュトークン | ✅       |         |
 
 ## Outputs
 
