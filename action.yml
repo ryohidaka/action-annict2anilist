@@ -1,12 +1,12 @@
-name: "action-annict2anilist"
+name: "annict2anilist"
 
 author: "ryohidaka"
 
 description: "Annict から AniList にライブラリを同期する `annict2anilist` を実行するGitHub Actions."
 
 branding:
-  color: green
-  icon: send
+  color: orange
+  icon: tv
 
 inputs:
   annict-client-id:
