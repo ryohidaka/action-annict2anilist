@@ -72,7 +72,7 @@ runs:
     - name: Run annict2anilist container
       run: |
         chmod -R 777 $GITHUB_ACTION_PATH/token
-        docker compose up
+        docker compose -f $GITHUB_ACTION_PATH/docker-compose.yml up
       shell: bash
       env:
         ANNICT_CLIENT_ID: ${{ inputs.annict-client-id }}
