@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/ryohidaka/action-annict2anilist/compare/v0.1.1...v0.1.2) (2024-10-05)
+
+
+### Bug Fixes
+
+* docker-composeの設定ファイルが参照できない不具合を修正 ([edd884a](https://github.com/ryohidaka/action-annict2anilist/commit/edd884aaac61d92a2d869c4ecfc0c21157226804))
+
 ## [0.1.1](https://github.com/ryohidaka/action-annict2anilist/compare/v0.1.0...v0.1.1) (2024-10-05)
 
 
