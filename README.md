@@ -41,8 +41,3 @@ jobs:
 | `anilist-refresh-token` | Anilist のリフレッシュトークン       | ✅       |         |
 | `annict-access-token`   | Annict のリフレッシュトークン        | ✅       |         |
 | `dry-run`               | デバッグフラグ(有効: `1`, 無効: `0`) |          | `0`     |
-
-## Outputs
-
-| Output | Description | Example |
-| ------ | ----------- | ------- |
