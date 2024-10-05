@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/ryohidaka/action-annict2anilist/compare/v0.1.0...v0.1.1) (2024-10-05)
+
+
+### Bug Fixes
+
+* tokenディレクトリのパスを修正 ([db070d6](https://github.com/ryohidaka/action-annict2anilist/commit/db070d6ef016a421efc93c8f8b2aad840f00de19))
+
 ## 0.1.0 (2024-10-05)
 
 
