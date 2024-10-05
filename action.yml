@@ -53,7 +53,7 @@ runs:
       shell: bash
 
     - name: Generate token directory
-      run: mkdir -p token
+      run: mkdir -p $GITHUB_ACTION_PATH/token
       shell: bash
 
     - name: Generate token-anilist.json
