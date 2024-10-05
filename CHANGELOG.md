@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/ryohidaka/action-annict2anilist/compare/v0.1.2...v0.1.3) (2024-10-05)
+
+
+### Bug Fixes
+
+* トークンファイルの出力先を修正 ([13299f6](https://github.com/ryohidaka/action-annict2anilist/commit/13299f6ddf5d5fd6a55213d2d412ea28edb393a2))
+
 ## [0.1.2](https://github.com/ryohidaka/action-annict2anilist/compare/v0.1.1...v0.1.2) (2024-10-05)
 
 
