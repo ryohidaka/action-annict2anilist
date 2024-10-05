@@ -20,7 +20,7 @@ EOF
 )
 
 # token/token-anilist.json に出力
-echo "$json" >token/token-anilist.json
+echo "$json" >$GITHUB_ACTION_PATH/token/token-anilist.json
 
 # 確認メッセージ
 echo "::notice::JSONファイルが token/token-anilist.json に保存されました。"

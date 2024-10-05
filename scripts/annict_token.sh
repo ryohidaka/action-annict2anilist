@@ -15,7 +15,7 @@ EOF
 )
 
 # token/token-annict.json に出力
-echo "$json" >token/token-annict.json
+echo "$json" >$GITHUB_ACTION_PATH/token/token-annict.json
 
 # 確認メッセージ
 echo "::notice::JSONファイルが token/token-annict.json に保存されました。"
